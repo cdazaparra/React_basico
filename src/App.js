@@ -1,22 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import RenderizadoElementos from './Components/RenderizadoElementos';
+import Eventos from './Components/Eventos';
+import {EventosEs7, MasSobreEventos} from './Components/EventosEs7';
+import Padre from './Components/ComunicaionComponentes';
+import CicloDeVida from './Components/CicloDeVida';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <RenderizadoElementos></RenderizadoElementos>
+        <hr></hr>
+        <Eventos></Eventos>
+        <hr></hr>
+        <EventosEs7></EventosEs7>
+        <hr></hr>
+        <MasSobreEventos></MasSobreEventos>
+        <hr></hr>
+        <Padre></Padre>
+        <hr></hr>
+        <CicloDeVida></CicloDeVida>
+        <hr></hr>
       </header>
     </div>
   );
