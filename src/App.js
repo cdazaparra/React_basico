@@ -4,6 +4,10 @@ import Eventos from './Components/Eventos';
 import {EventosEs7, MasSobreEventos} from './Components/EventosEs7';
 import Padre from './Components/ComunicaionComponentes';
 import CicloDeVida from './Components/CicloDeVida';
+import AjaxApis from './Components/AjaxApis';
+import ContadorHooks from './Components/ContadorHooks';
+import ScrollHooks from './Components/ScrollHooks';
+import RelojHooks from './Components/RelojHooks';
 
 function App() {
   return (
@@ -21,6 +25,13 @@ function App() {
         <hr></hr>
         <CicloDeVida></CicloDeVida>
         <hr></hr>
+        <AjaxApis></AjaxApis>
+        <hr></hr>
+        <ContadorHooks></ContadorHooks>
+        <hr></hr>
+        <ScrollHooks></ScrollHooks>
+        <hr></hr>
+        <RelojHooks></RelojHooks>
       </header>
     </div>
   );

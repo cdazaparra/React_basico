@@ -9,13 +9,13 @@ export default class Eventos extends Component{
                 this.restar = this.restar.bind(this)
         }
         sumar(e){
-                console.log('Sumando');
+                //console.log('Sumando');
                 this.setState({
                         contador: this.state.contador +1
                 })
         }
         restar(e){
-                console.log('Restando');
+                //console.log('Restando');
                 this.setState({
                         contador: this.state.contador -1
                 })
@@ -24,7 +24,7 @@ export default class Eventos extends Component{
                 return(
                         <div>
                                 <h2>
-                                        Eventos de componentes de clase
+                                        Eventos de componentes de clase ES6
                                 </h2>
                                 <nav>
                                         <button onClick={this.sumar}>+</button>

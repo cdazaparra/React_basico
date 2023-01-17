@@ -6,7 +6,7 @@ class Reloj extends Component {
         }
 
         componentWillUnmount(){
-                console.log(3,"El componente ha sido eliminado del DOM");
+                //console.log(3,"El componente ha sido eliminado del DOM");
         }
         render() {
             return (
@@ -27,12 +27,12 @@ export default class CicloVida extends Component {
           this.temporizador = null;
         }
         componentDidMount() {
-                console.log(1,"El componente ya está en el DOM");
+                //console.log(1,"El componente ya está en el DOM");
         }
         componentDidUpdate(prevPoprs, prevState){
-                console.log(2,"El estado o las props del componente han cambiado");
-                console.log("prevPoprs:",prevPoprs);
-                console.log("prevState:",prevState);
+                //console.log(2,"El estado o las props del componente han cambiado");
+                //console.log("prevPoprs:",prevPoprs);
+                //console.log("prevState:",prevState);
         }
         tictac= ()=>{
                 this.temporizador=setInterval(()=>{
@@ -54,7 +54,7 @@ export default class CicloVida extends Component {
                 })
         }
         render(){
-                console.log(4, "El component se dibuja por algún cambio en el DOM");
+                //console.log(4, "El component se dibuja por algún cambio en el DOM");
                 return(
                         <>
                                 <h2>Ciclo de Vida</h2>
@@ -63,7 +63,6 @@ export default class CicloVida extends Component {
                                 <button onClick={this.iniciar}>Iniciar</button>
                                 <button onClick={this.detener}>Detener</button>
                                 </nav>
-                                
                         </>
                 )
         }
